@@ -7,7 +7,7 @@ programa
 {
 	funcao inicio()
 	{
-		caracter nome1, nome2
+		cadeia nome1, nome2
 		inteiro idade1, idade2   
 		
 		escreva("Informe nome: ")
@@ -28,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 467; 
+ * @POSICAO-CURSOR = 186; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
