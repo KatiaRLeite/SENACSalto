@@ -20,15 +20,18 @@ programa
 		leia(idade2)
 		
 		limpa()
-		escreva("A média de idade entre "+nome1+" e "+nome2+((idade1+idade2)/2))
+		escreva("A média de idade entre ",nome1," e ",nome2," ",((idade1+idade2)/2))
 	}
 }
+
+
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 186; 
+ * @POSICAO-CURSOR = 498; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
