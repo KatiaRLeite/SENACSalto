@@ -12,11 +12,11 @@ permitir a tentativa de divisão de um número por zero.
 		real numero1, numero2
 		caracter operacao
 		
-		escreva("Entre com primeiro número ")
+		escreva("Entre com primeiro número: ")
 		leia(numero1)
-		escreva("Entre com segundo número ")
+		escreva("Entre com segundo número: ")
 		leia(numero2)
-		escreva("Entre com operação ")
+		escreva("Entre com operação: ")
 		leia(operacao)
 
 		se ((numero2==0) e (operacao=='/'))
@@ -25,21 +25,47 @@ permitir a tentativa de divisão de um número por zero.
 		}
 		senao
 		{
-			escolha(operacao)
+			escreva("Resultado: ")
+			se (operacao == '+') 
 			{
-				caso '+':
-				
+				escreva(numero1+numero2)
+			}
+			senao
+			{	
+				se (operacao == '-') 
+				{
+					escreva(numero1-numero2)
+				}
+				senao
+				{ 
+					se (operacao == '*') 
+					{
+						escreva(numero1*numero2)
+					}
+					senao
+					{
+						se (operacao == '/')
+						{
+							escreva(numero1/numero2)
+						}
+						senao 
+						{
+							escreva("Operação não permitida")
+						}
+					}
+				}
 			}
 		}
-		
 	}
 }
+
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 654; 
+ * @POSICAO-CURSOR = 1060; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
