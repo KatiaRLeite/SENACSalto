@@ -11,7 +11,11 @@ programa
 			y=y+2
 			x=x+1
 			escreva(x,"-",y,"\n")
+<<<<<<< Updated upstream
 		}enquanto(x<3)
+=======
+		}enquanto(x<2)
+>>>>>>> Stashed changes
 	}
 }
 /* $$$ Portugol Studio $$$ 
