@@ -14,8 +14,8 @@ programa
 			leia(num2)	
 			soma=num1+num2
 			escreva("A soma dos dois número é", soma)
-			escreva("Deseja realizar outra soma?")
-			escreva("S para sim e N para Não")
+			escreva("\nDeseja realizar outra soma?")
+			escreva("S para sim e N para Não\n")
 			leia(pergunta)
 			
 		}
@@ -27,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 415; 
+ * @POSICAO-CURSOR = 340; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
