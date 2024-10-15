@@ -1,5 +1,5 @@
 programa
-{/*O IPVA de um veículo é calculado tomando como base o
+{/*O IPVA de um veículo é calculado tomando como base o
 valor do veículo, o combustível utilizado e o tipo do veículo
 que serão fornecidos pelo usuário. Em seguida, o IPVA será
 calculado como 
@@ -12,12 +12,34 @@ calcule o mostre o valor do IPVA*/
 	
 	funcao inicio()
 	{
-		caracter tipo
+		caracter tipoveiculo, combustivel
 		real valorveiculo
-		escreva("Tipo veículo:\nDigite \n(V) para carro\n(M) para motos, camionetes de cabine simples e ônibus\n(C) caminhões ")
-		leia(tipo)
+		escreva("Tipo veículo:\nDigite \n(V) para carro\n(M) para motos, camionetes de cabine simples e ônibus\n(C) caminhões\n ")
+		leia(tipoveiculo)
 		escreva("Valor veículo: ")
 		leia(valorveiculo)
+		
+		se(tipoveiculo=='V')
+		{
+			escreva("Informe o combustivel (G) gasolina ou flex e (E) etanol, eletricidade ou gas\n")
+			leia(combustivel)
+			se(combustivel=='G')
+			{
+				escreva("Valor IPVA ",(valorveiculo*0.04))
+			}
+			senao se(combustivel=='E')
+				{
+					escreva("Valor IPVA ",(valorveiculo*0.03))
+				}
+		}
+		senao se(tipoveiculo=='M')
+			{
+				escreva("Valor IPVA ",(valorveiculo*0.02))
+			}
+		senao se(tipoveiculo=='C')
+			{
+				escreva("Valor IPVA ",(valorveiculo*0.015))
+			}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -25,7 +47,7 @@ calcule o mostre o valor do IPVA*/
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 867; 
+ * @POSICAO-CURSOR = 893; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
