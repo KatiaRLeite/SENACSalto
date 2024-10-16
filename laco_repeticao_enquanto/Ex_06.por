@@ -16,8 +16,11 @@ digite um número negativo.
 		{
 			escreva("Digite um número inteiro positivo: ")
 			leia(numero)
-			soma=soma+numero
-			escreva("\nSoma: ",soma)
+			se(numero>0)
+			{
+				soma=soma+numero
+				escreva("\nSoma: ",soma)
+			}
 		}
 		enquanto(numero>0)
 		
@@ -28,7 +31,7 @@ digite um número negativo.
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 305; 
+ * @POSICAO-CURSOR = 398; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
