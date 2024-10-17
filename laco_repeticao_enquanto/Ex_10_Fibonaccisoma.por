@@ -10,18 +10,21 @@ sequência de Fibonacci até o número informado
 		inteiro numero, anterior, atual, calculo, soma
 		escreva("Digite um número inteiro positivo: ")
 		leia(numero)
-		anterior=0
-		atual=1
-		soma=0
-		faca
+		se(numero>0)
 		{
-			soma=soma+atual
-			calculo=anterior+atual
-			anterior=atual
-			atual=calculo
+			anterior=0
+			atual=1
+			soma=0
+			faca
+			{
+				soma=soma+atual
+				calculo=anterior+atual
+				anterior=atual
+				atual=calculo
+			}
+			enquanto(atual<=numero)
+			escreva("Resultado: ",soma)
 		}
-		enquanto(atual<=numero)
-		escreva("Resultado: ",soma)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -29,7 +32,7 @@ sequência de Fibonacci até o número informado
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 464; 
+ * @POSICAO-CURSOR = 506; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

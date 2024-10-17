@@ -10,17 +10,19 @@ valor informado.
 		inteiro numero, anterior, atual, calculo
 		escreva("Digite um número inteiro positivo: ")
 		leia(numero)
-		anterior=0
-		atual=1
-		
-		faca
+		se(numero>=0)
 		{
-			escreva("\n",atual)
-			calculo=anterior+atual
-			anterior=atual
-			atual=calculo
+			anterior=0
+			atual=1
+			faca
+			{
+				escreva("\n",atual)
+				calculo=anterior+atual
+				anterior=atual
+				atual=calculo
+			}
+			enquanto(atual<=numero)
 		}
-		enquanto(atual<=numero)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -28,7 +30,7 @@ valor informado.
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 316; 
+ * @POSICAO-CURSOR = 445; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
