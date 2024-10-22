@@ -10,9 +10,10 @@ programa
 		inteiro gols[11], i, anterior, indice
 		
 		anterior=0
+		indice=0
 		para(i=0;i<11;i++)
 		{	
-			escreva("Digite o nome ")
+			escreva("\nDigite o nome ")
 			leia(nomes[i])
 			escreva("Digite qtde gols ")
 			leia(gols[i])
@@ -22,7 +23,7 @@ programa
 				indice=i
 			}
 		}
-		escreva("\nO artilheiro foi ", nomes[i], " com ", gols[i], " gols.")
+		escreva("\nO artilheiro foi ", nomes[indice], " com ", gols[indice], " gols.")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -30,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 565; 
+ * @POSICAO-CURSOR = 547; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
