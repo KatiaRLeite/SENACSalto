@@ -12,26 +12,31 @@ programa
 	
 	funcao inicio()
 	{
-		cadeia vagas[18][2], placa
+		inteiro vagas[18][2]
+		inteiro placa
 		inteiro x, y, opcao, encontrou
 		opcao=0
+		encontrou=0
 		faca
 		{
-			escreva("Informe o que deseja: (1) para estacionar, (2) para buscar e (0) para encerrar")
+			escreva("\nInforme o que deseja\n")
+			escreva("(1) para estacionar, (2) para buscar e (0) para encerrar:  ")
 			leia(opcao)
 
 			escolha(opcao)
 			{
 				caso 1:
-					escreva("Informe a vaga")
+					escreva("**Estacionar**\n")
+					escreva("Informe a vaga: ")
 					leia(x)
 					leia(y)
-					escreva("Informe a placa")
+					escreva("\nInforme a placa: ")
 					leia(placa)
 					vagas[x][y]=placa
 				pare //caso 1
 				caso 2:
-					escreva("Informe a placa")
+					escreva("**Buscar veículo**\n")
+					escreva("Informe a placa: ")
 					leia(placa)
 					para(x=0;x<18;x++)
 					{
@@ -39,7 +44,8 @@ programa
 						{
 							se(vagas[x][y]==placa)
 							{
-								escreva("Sua vaga é a x: ",x,"y: ",y)
+								escreva("Sua vaga é a x: ",x," y: ",y)
+								vagas[x][y]=0
 								encontrou=1
 								pare
 							}
@@ -61,7 +67,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1158; 
+ * @POSICAO-CURSOR = 1180; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
