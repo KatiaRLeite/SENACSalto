@@ -6,12 +6,12 @@ programa
 */	
 	funcao inicio()
 	{
-		cadeia nomes[11]
-		inteiro gols[11], i, anterior, indice
+		cadeia nomes[3]
+		inteiro gols[3], i, anterior, indice
 		
-		anterior=0
+		anterior=-1
 		indice=0
-		para(i=0;i<11;i++)
+		para(i=0;i<3;i++)
 		{	
 			escreva("\nDigite o nome ")
 			leia(nomes[i])
@@ -31,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 547; 
+ * @POSICAO-CURSOR = 376; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
