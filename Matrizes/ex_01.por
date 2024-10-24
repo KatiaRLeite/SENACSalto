@@ -19,14 +19,21 @@ programa
 		escreva("Informe a poltrona desejada: ")
 		leia(x)
 		leia(y)
-		poltronas[x][y]=1
-		para(x=0;x<11;x++)
+		se((x<11) e (y<4))
 		{
-			para(y=0;y<4;y++)
+			poltronas[x][y]=1
+			para(x=0;x<11;x++)
 			{
-				escreva(poltronas[x][y]," ")
+				para(y=0;y<4;y++)
+				{
+					escreva(poltronas[x][y]," ")
+				}
+				escreva("\n")
 			}
-			escreva("\n")
+		}
+		senao
+		{
+			escreva("Informe uma fileira ate o 10 e poltrona ate o 4")
 		}
 	}
 }
@@ -35,7 +42,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 547; 
+ * @POSICAO-CURSOR = 684; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

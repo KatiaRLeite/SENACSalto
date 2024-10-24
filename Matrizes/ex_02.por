@@ -12,8 +12,8 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro vagas[18][2]
-		inteiro placa
+		cadeia vagas[18][2]
+		cadeia placa
 		inteiro x, y, opcao, encontrou
 		opcao=0
 		encontrou=0
@@ -45,7 +45,7 @@ programa
 							se(vagas[x][y]==placa)
 							{
 								escreva("Sua vaga é a x: ",x," y: ",y)
-								vagas[x][y]=0
+								vagas[x][y]="0"
 								encontrou=1
 								pare
 							}
@@ -67,7 +67,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1180; 
+ * @POSICAO-CURSOR = 1512; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
