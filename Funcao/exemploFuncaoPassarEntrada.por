@@ -17,11 +17,11 @@ programa
 	 	escreva("Função calcular multiplicação \n")
 	 	retorne n1*n2
 	}
-	funcao inteiro CalcularDivisao(inteiro n1, inteiro n2)
+	funcao real CalcularDivisao(real n1, real n2)
 	{
-		se (n2==0)
+		se (n2==0.0)
 		{ 
-			retorne 0
+			retorne 0.0
 		}
 	 	escreva("Função calcular Subtração \n")
 	 	retorne n1/n2
@@ -30,21 +30,22 @@ programa
 	funcao inicio()
 	{
 		inteiro Resultado
+		real ResultadoReal
 		escreva("Inicio programa principal\n")
-		Resultado = CalcularSoma(0,2)
+		Resultado=CalcularSoma(0,2)
 		escreva("Soma realizada pela funcao: ",Resultado,"\n")
-		Resultado = CalcularSubtracao(0,2)
+		Resultado=CalcularSubtracao(0,2)
 		escreva("Subtração realizada pela funcao: ",Resultado,"\n")
-		Resultado = CalcularMultiplicacao(0,2)
+		Resultado=CalcularMultiplicacao(0,2)
 		escreva("Multiplicação realizada pela funcao: ",Resultado,"\n")
-		Resultado = CalcularDivisao(0,0)
-		se (Resultado==0)
+		ResultadoReal=CalcularDivisao(10.0,0.0)
+		se (ResultadoReal==0)
 		{
 			escreva("Operação inválida\n")
 		}
 		senao
 		{
-			escreva("Divisão realizada pela funcao: ",Resultado,"\n")	
+			escreva("Divisão realizada pela funcao: ",ResultadoReal,"\n")	
 		}
 		
 		escreva("Fim programa principal\n")
@@ -55,7 +56,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1067; 
+ * @POSICAO-CURSOR = 1024; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
